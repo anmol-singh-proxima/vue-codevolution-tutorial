@@ -15,3 +15,7 @@
 
 4. Event Handling
 - v-on:{event}
+
+5. Form Handling
+- v-model - for form element data-binding
+- v-on:submit - to submit the form
