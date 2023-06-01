@@ -39,6 +39,7 @@ export default {
                 'Conditional Rendering',
                 'List Rendering',
                 'Event Handling',
+                'Form Handling'
             ],
             currentMenuIndex: 0,
         }

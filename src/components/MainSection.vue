@@ -4,6 +4,7 @@
         <ConditionalRendering v-if="currentMenuIndex === 1" />
         <ListRendering v-if="currentMenuIndex === 2" />
         <EventHandling v-if="currentMenuIndex === 3" />
+        <FormHandling v-if="currentMenuIndex === 4" />
     </div>
 </template>
 
@@ -13,6 +14,7 @@ import Binding from './Topics/1_Binding.vue'
 import ConditionalRendering from './Topics/2_ConditionalRendering.vue'
 import ListRendering from './Topics/3_ListRendering.vue';
 import EventHandling from './Topics/4_EventHandling.vue';
+import FormHandling from './Topics/5_FormHandling.vue';
 export default {
     name: 'MainSection',  
     components: {
@@ -20,6 +22,7 @@ export default {
         ConditionalRendering,
         ListRendering,
         EventHandling,
+        FormHandling
     }, 
     props: {
         menuItems: Array,
