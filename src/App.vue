@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Binding /><hr/>
+  <ConditionalRendering /><hr/>
+  <ListRendering />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Binding from './components/1_Binding.vue'
+import ConditionalRendering from './components/2_ConditionalRendering.vue'
+import ListRendering from './components/3_ListRendering.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Binding,
+    ConditionalRendering,
+    ListRendering,
   }
 }
 </script>
@@ -19,8 +23,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+}
+h1 {
+  text-decoration: underline;
 }
 </style>
