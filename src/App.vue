@@ -1,19 +1,22 @@
 <template>
   <Binding /><hr/>
   <ConditionalRendering /><hr/>
-  <ListRendering />
+  <ListRendering /><hr/>
+  <EventHandling />
 </template>
 
 <script>
 import Binding from './components/1_Binding.vue'
 import ConditionalRendering from './components/2_ConditionalRendering.vue'
 import ListRendering from './components/3_ListRendering.vue';
+import EventHandling from './components/4_EventHandling.vue';
 export default {
   name: 'App',
   components: {
     Binding,
     ConditionalRendering,
     ListRendering,
+    EventHandling
   }
 }
 </script>

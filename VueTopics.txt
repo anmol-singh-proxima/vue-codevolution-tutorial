@@ -12,3 +12,6 @@
 3. List Rendering
 - v-for
 - v-for with v-if
+
+4. Event Handling
+- v-on:{event}
