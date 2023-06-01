@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>Conditional Rendering</h1>
+        <h2>Conditional Rendering</h2>
+        <hr/>
         <p v-if="num === 0">Number is zero</p>
         <p v-else-if="num>0">Number is positive</p>
         <p v-else-if="num<0">Number is negative</p>
@@ -11,7 +12,7 @@
             <p>Lives in Bangalore</p>
             <p>Study Full Stack</p>
         </template>
-        <h2>Cities in India:</h2>
+        <h3>Cities in India:</h3>
         <div v-show="showDiv">
             <p>Delhi</p>
             <p>Aligarh</p>    
@@ -25,6 +26,7 @@
 
 
 <script>
+/* eslint-disable */
 export default {
     name: 'ConditionalRendering',
     data() {
@@ -44,7 +46,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .active {
     color: red;
     text-decoration: underline;

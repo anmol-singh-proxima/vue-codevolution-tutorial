@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>Event Handling</h1>
+        <h2>Event Handling</h2>
+        <hr/>
         <form>
             <input type="text" v-model="name" />
         </form><br/>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     name: 'EventHandling',
     data() {

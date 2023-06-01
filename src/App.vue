@@ -1,22 +1,14 @@
 <template>
-  <Binding /><hr/>
-  <ConditionalRendering /><hr/>
-  <ListRendering /><hr/>
-  <EventHandling />
+  <Home />
 </template>
 
 <script>
-import Binding from './components/1_Binding.vue'
-import ConditionalRendering from './components/2_ConditionalRendering.vue'
-import ListRendering from './components/3_ListRendering.vue';
-import EventHandling from './components/4_EventHandling.vue';
+/* eslint-disable */
+import Home from './components/Home.vue';
 export default {
   name: 'App',
   components: {
-    Binding,
-    ConditionalRendering,
-    ListRendering,
-    EventHandling
+    Home,
   }
 }
 </script>
@@ -29,7 +21,12 @@ export default {
   text-align: left;
   color: #2c3e50;
 }
-h1 {
-  text-decoration: underline;
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>

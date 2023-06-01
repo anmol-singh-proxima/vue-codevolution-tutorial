@@ -1,18 +1,19 @@
 <template>
     <div>
-        <h1>List Rendering</h1>
-        <h2>Normal List Rendering</h2>
-        <h3>Names:</h3>
+        <h2>List Rendering</h2>
+        <hr/>
+        <h3>Normal List Rendering</h3>
+        <h4>Names:</h4>
         <div v-for="(name, index) in names" :key="name">
             <p>{{index}} - {{name}}</p>
         </div>
-        <h3>Full Names:</h3>
+        <h4>Full Names:</h4>
         <div v-for="name in fullNames" :key="name.first">
             <p>{{name.first}} {{name.last}}</p>
         </div>
-        <h3>My Info:</h3>
+        <h4>My Info:</h4>
         <p v-for="(value, key, index) in myInfo" :key="value">{{index}} - {{key}}: {{value}}</p>
-        <h3>All Actors Details:</h3>
+        <h4>All Actors Details:</h4>
         <table border="1">
             <tr>
                 <th>S.No.</th>
@@ -29,8 +30,9 @@
                 <td>{{actor.oscar ? 'Yes' : 'No'}}</td>
             </tr>
         </table>
-        <h2>Conditional List Rendering</h2>
-        <h3>Actors with Oscar</h3>
+        <hr/>
+        <h3>Conditional List Rendering</h3>
+        <h4>Actors with Oscar</h4>
         <table border="1">
             <tr>
                 <th>S.No.</th>
@@ -51,6 +53,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     name: 'ListRendering',
     data() {

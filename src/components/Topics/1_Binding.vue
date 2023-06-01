@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>Binding</h1>
+        <h2>Binding</h2>
+        <hr/>
         <div v-html="content"></div>
         <a v-bind:class="linkClass" href="">The link is {{linkStatus}}</a><br/>
         <button type="button" @click="toggleActive">Click to make the link {{buttonText}}</button>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     name: 'Binding',
     data() {
@@ -41,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .active {
     color: red;
     text-decoration: underline;
