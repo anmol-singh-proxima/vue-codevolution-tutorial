@@ -19,3 +19,12 @@
 5. Form Handling
 - v-model - for form element data-binding
 - v-on:submit - to submit the form
+
+6. Modifiers
+- Extra addons in the vue-directives
+- These modifiers can be chained one-after-other
+- v-model.trim - to trim a form field like input or textarea 
+- v-model.number - to treat a input[type="number"] as a number
+- v-model.lazy - to prevent change with every keystroke in input field, helpful in input validation only after the input is filled completely
+- v-on:submit.prevent - do the work of event.preventDefault()
+- v-on:keyup:enter - to submit the form on Enter key on an input

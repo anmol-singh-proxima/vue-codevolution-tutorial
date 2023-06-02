@@ -3,14 +3,14 @@
         <h2>Form Handling</h2><hr/>
         <div class="job-form">
             <h3>Job Applicant Form</h3>
-            <form @submit="submitForm">
+            <form v-on:submit.prevent="submitForm">
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" id="name" v-model="formData.name" />
+                    <input type="text" id="name" v-model.trim.lazy="formData.name" />
                 </div>
                 <div>
                     <label for="profile">Profile Summary</label>
-                    <textarea rows="5" id="profile" v-model="formData.profileSummary"></textarea>
+                    <textarea rows="5" id="profile" v-model.trim.lazy="formData.profileSummary"></textarea>
                 </div>
                 <div>
                     <label for="country">Country</label>
@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <label for="jobLocation">Job Location</label>
-                    <select id="jobLocation" multiple v-model="formData.jobLocation">
+                    <select id="jobLocation" multiple v-model.lazy="formData.jobLocation">
                         <option value="Bharat">Bharat</option>
                         <option value="Israel">Israel</option>
                         <option value="Russia">Russia</option>
@@ -53,6 +53,10 @@
                     <label for="5-10">5-10</label>
                     <input type="radio" value="10+" id="10+" v-model="formData.yearsOfExperience" />
                     <label for="10+">10+</label>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input v-on:keyup.enter="submitForm" type="number" id="age" v-model="formData.age" />
                 </div>
                 <button>Submit</button>
             </form>
@@ -88,6 +92,10 @@
                     <th>Years Of Experience</th>
                     <td>{{ formData.yearsOfExperience }}</td>
                 </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>{{ formData.age }}</td>
+                </tr>
             </table>
         </div>
     </div>
@@ -105,14 +113,14 @@ export default {
                 jobLocation: [],
                 remoteWork: 'No',
                 skillSet: [],
-                yearsOfExperience: ''
+                yearsOfExperience: '',
+                age: null
             },
             formDataVisible: false,
         }
     },
     methods: {
         submitForm(event) {
-            event.preventDefault()
             this.formDataVisible = true
         }
     }
