@@ -34,3 +34,8 @@
 7. Bonus directives
 - v-once - it will render the element(which is using this directive) only once, at re-render it won't change
 - v-pre - it won't compile the element(which is using this directive), it will render it as it is as a HTML string
+
+8. Computed property
+- It computes a peroperty based on the existing data as the computed property.
+- It is better than writing the computed code (as javascript expression) directly in template since it might needs to get displayed in several places in the template.
+- It is better than a method/function because whenever we want to re-render the computed property we don't need to call the computed property like a function since it stores the value as cache which gets changed only when the dependencies gets changed which improves the overall performance.

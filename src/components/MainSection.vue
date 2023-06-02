@@ -5,6 +5,7 @@
         <ListRendering v-if="currentMenuIndex === 2" />
         <EventHandling v-if="currentMenuIndex === 3" />
         <FormHandling v-if="currentMenuIndex === 4" />
+        <ComputedProperties v-if="currentMenuIndex === 5" />
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import ConditionalRendering from './Topics/2_ConditionalRendering.vue'
 import ListRendering from './Topics/3_ListRendering.vue';
 import EventHandling from './Topics/4_EventHandling.vue';
 import FormHandling from './Topics/5_FormHandling.vue';
+import ComputedProperties from './Topics/6_ComputedProperties.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -22,7 +24,8 @@ export default {
         ConditionalRendering,
         ListRendering,
         EventHandling,
-        FormHandling
+        FormHandling,
+        ComputedProperties,
     }, 
     props: {
         menuItems: Array,
