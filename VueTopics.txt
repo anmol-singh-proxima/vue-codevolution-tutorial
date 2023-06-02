@@ -1,7 +1,9 @@
 1. Binding
-- text
-- html
-- attributes: class, style
+- binding happens using v-bind directive
+- there are few ways we can bind the data or style to html element:
+    - text - v-bind:text
+    - html - v-bind:html
+    - attributes: class, style - v-bind:class, v-bind:style
 
 2. Conditional Rendering
 - v-if
@@ -10,11 +12,11 @@
 - v-else
 
 3. List Rendering
-- v-for
-- v-for with v-if
+- v-for - Normal List Conditional
+- v-for with v-if - Conditional List Rendering
 
 4. Event Handling
-- v-on:{event}
+- v-on:{event} or @{event}
 
 5. Form Handling
 - v-model - for form element data-binding
@@ -28,3 +30,7 @@
 - v-model.lazy - to prevent change with every keystroke in input field, helpful in input validation only after the input is filled completely
 - v-on:submit.prevent - do the work of event.preventDefault()
 - v-on:keyup:enter - to submit the form on Enter key on an input
+
+7. Bonus directives
+- v-once - it will render the element(which is using this directive) only once, at re-render it won't change
+- v-pre - it won't compile the element(which is using this directive), it will render it as it is as a HTML string
