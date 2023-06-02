@@ -56,6 +56,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     name: 'ComputedProperties',
     data() {
@@ -106,7 +107,7 @@ export default {
             this.price = null
         },
         changeFullname() {
-            this.fullname = 'Shruti Shree'
+            this.fullname = 'Bhagat Singh'
         }
     }
 }
@@ -118,7 +119,7 @@ export default {
     flex-wrap: wrap;
     flex-direction: row;
 }
-.items, .expensive-items, .items-form, .profile {
+.items, .expensive-items, .add-items, .profile {
     width: 33%;
     padding-right: 10px;
 }
@@ -133,9 +134,6 @@ export default {
 .expensive-items span {
     font-size: 13px;
     font-style: italic;
-}
-.add-items {
-    width: 33%;
 }
 .items-form input, .items-form label {
     display: block;

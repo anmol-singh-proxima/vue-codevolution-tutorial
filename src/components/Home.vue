@@ -3,19 +3,23 @@
         <div class="header">
             <Header />
         </div>
-        <div class="section">
-            <div class="menu-section">
-                <MenuSection 
-                :menuItems="menuItems"
-                :currentMenuIndex="currentMenuIndex"
-                :setMenuIndex="setMenuIndex"/>
-            </div>
-            <div class="main-section">
-                <MainSection 
-                :menuItems="menuItems"
-                :currentMenuIndex="currentMenuIndex"
-                :setMenuIndex="setMenuIndex"/>
-            </div>
+        <!-- <div class="section">
+            
+        </div> -->
+        <div class="menu-section">
+            <MenuSection 
+            :menuItems="menuItems"
+            :currentMenuIndex="currentMenuIndex"
+            :setMenuIndex="setMenuIndex"/>
+        </div>
+        <div class="main-section">
+            <MainSection 
+            :menuItems="menuItems"
+            :currentMenuIndex="currentMenuIndex"
+            :setMenuIndex="setMenuIndex"/>
+        </div>
+        <div class="footer">
+            <Footer />
         </div>
     </div>
 </template>
@@ -25,12 +29,14 @@
 import Header from './Header.vue';
 import MenuSection from './MenuSection.vue';
 import MainSection from './MainSection.vue';
+import Footer from './Footer.vue';
 export default {
     name: 'Home',
     components: {
         Header,
         MenuSection,
         MainSection,
+        Footer,
     },
     data() {
         return {
@@ -41,6 +47,7 @@ export default {
                 'Event Handling',
                 'Form Handling',
                 'Computed Properties',
+                'Watchers',
             ],
             currentMenuIndex: 0,
         }
@@ -57,24 +64,26 @@ export default {
 .home-page {
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px auto 50px;
+    min-height: 100vh;
 }
 .header {
-    width: 100%;
-}
-.section {
-    width: 100%;
-    display: block;
-    clear: both;
-    text-align: left;
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
 .menu-section {
-    width: 20%;
-    float: left;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 .main-section {
-    width: 80%;
-    float: right;
-    border-left: 1px solid #888;
+    grid-column: 2/5;
+    grid-row: 2/3;
 }
-
+.footer {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    margin-top: auto;
+}
 </style>

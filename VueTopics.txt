@@ -38,4 +38,18 @@
 8. Computed property
 - It computes a peroperty based on the existing data as the computed property.
 - It is better than writing the computed code (as javascript expression) directly in template since it might needs to get displayed in several places in the template.
-- It is better than a method/function because whenever we want to re-render the computed property we don't need to call the computed property like a function since it stores the value as cache which gets changed only when the dependencies gets changed which improves the overall performance.
+- It is better than a method/function because whenever you want to re-render the computed property you don't need to call the computed property like a function since it stores the value as cache which gets changed only when the dependencies gets changed which improves the overall performance.
+- Use Computed Properties when:
+    - You need to compose new data from existing data
+    - You need to reduce the length of the variable by getting someDeeplyNestedProperty of an object
+
+9. Watchers
+- It watches the changes in a property given as key
+- It automatically provides new-value and old-value as arguments to the function of property
+- Use Watchers when:
+    - You have to check if a property has changed to a favourable value to know if you are ready to perform an action
+    - You have to call an API in response to change in application data
+    - You have to apply transitions
+- There are 2 properties of watchers:
+    - immediate - when the watcher handlers needs to execute immediately at the time of component rendering, this property sets to true
+    - deep - when you need to check for the changes for the nested values of objects and array, this property sets to true

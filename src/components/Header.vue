@@ -1,10 +1,10 @@
 <template>
     <div class="header-main">
         <div class="left-side">
-            <h3>Vue Learning - Codevolution</h3>
+            <h4>Vue Learning - Codevolution</h4>
         </div>
         <div class="right-side">
-            <h3>Anmol Singh</h3>
+            <h4>Anmol Singh</h4>
         </div>
     </div>
 </template>
@@ -18,22 +18,27 @@ export default {
 
 <style scoped>
 .header-main {
-    display: block;
-    background-color: lightskyblue;
+    display: grid;
     color: #333;
-    clear: both;
-    overflow: hidden;
-    padding: 10px;
-    justify-content: center;
+    background-color: lightskyblue;
+    height: 50px;
+    align-items: center;
 }
 .header .left-side {
-    float: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    padding-left: 20px;
 }
 .header .right-side {
-    float: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+    padding-right: 20px;
 }
-.header h3 {
+.header h4 {
     padding: 0;
     margin: 0;
+    font-size: 17px;
 }
 </style>
