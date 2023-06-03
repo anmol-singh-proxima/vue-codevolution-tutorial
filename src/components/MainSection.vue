@@ -7,6 +7,7 @@
         <FormHandling v-if="currentMenuIndex === 4" />
         <ComputedProperties v-if="currentMenuIndex === 5" />
         <Watchers v-if="currentMenuIndex === 6" />
+        <ProvideAndInject v-if="currentMenuIndex === 7" />
     </div>
 </template>
 
@@ -19,6 +20,7 @@ import EventHandling from './Topics/4_EventHandling.vue';
 import FormHandling from './Topics/5_FormHandling.vue';
 import ComputedProperties from './Topics/6_ComputedProperties.vue'
 import Watchers from './Topics/7_Watchers.vue';
+import ProvideAndInject from './Topics/9_ProvideAndInject.vue';
 export default {
     name: 'MainSection',  
     components: {
@@ -29,6 +31,7 @@ export default {
         FormHandling,
         ComputedProperties,
         Watchers,
+        ProvideAndInject,
     }, 
     props: {
         menuItems: Array,

@@ -1,3 +1,7 @@
+VSCode Extensions:
+- Vue VSCode Snippets
+
+
 1. Binding
 - binding happens using v-bind directive
 - there are few ways we can bind the data or style to html element:
@@ -53,3 +57,52 @@
 - There are 2 properties of watchers:
     - immediate - when the watcher handlers needs to execute immediately at the time of component rendering, this property sets to true
     - deep - when you need to check for the changes for the nested values of objects and array, this property sets to true
+
+
+10. Components and props
+- Component is a basic building block of Front-end design
+- It makes the code simpler by increasing reusability and readability
+- A component (parent component) can call another another component as child component to use the child component in its template
+- Prop Attributes:
+    - Parent component can pass data to child component as attributes
+    - These attributes can be used in child component as props by registering in props object
+    - A single prop in child component can have 3 different properties:
+        - type: [Number, String, Boolean, Object, Array, Function]
+        - required: [true, false]
+        - default: [Some default value in-case prop is not passed]
+- Non-prop Attributes:
+    - There are some non-prop attributes like id, class, style passed to child component
+    - These non-prop attributes are applied on root node of child component by default
+    - To avoid by-default behaviour, we can:
+        - set 'inheritAttrs' property in child component to false
+            export default {
+                name: '', ...
+                inheritAttrs: false,
+            }
+        - and, provide binding to the required element (instead of root node) by using $attrs
+            <div> //root node
+                <h2 v:bind="$attrs>...</h2> //required node
+            </div>
+
+
+11. Provide and Inject
+- These are 2 APIs provided by vue to pass the data through the component tree without having to pass the data manually as props through each component
+- In root component, add a 'provide' property/function and pass/return the neccessary data as object
+    export default {
+        name: 'AppComponent',
+        ...
+        provide: {  // 'provide' property
+            data: 'some data',
+        }
+        provide() {  // 'provide' function
+            return {
+                data: 'some data',
+            }
+        }
+    }
+- In nested down child component, add a property called 'inject', and simply add the 'data' property passed from 'provide' API and use it in child component as a normal data-property
+    export default {
+        name: 'NestedChildComponent',
+        ...
+        inject: ['data']
+    }
