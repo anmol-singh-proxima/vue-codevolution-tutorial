@@ -45,6 +45,7 @@ export default {
                 'Form Handling',
                 'Computed Properties',
                 'Watchers',
+                'Component and Props',
                 'Provide and Inject',
             ],
             currentMenuIndex: 0,
