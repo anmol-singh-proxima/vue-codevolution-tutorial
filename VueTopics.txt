@@ -9,22 +9,27 @@ VSCode Extensions:
     - html - v-bind:html
     - attributes: class, style - v-bind:class, v-bind:style
 
+
 2. Conditional Rendering
 - v-if
 - v-if-else
 - v-if-else-if
 - v-else
 
+
 3. List Rendering
 - v-for - Normal List Conditional
 - v-for with v-if - Conditional List Rendering
 
+
 4. Event Handling
 - v-on:{event} or @{event}
+
 
 5. Form Handling
 - v-model - for form element data-binding
 - v-on:submit - to submit the form
+
 
 6. Modifiers
 - Extra addons in the vue-directives
@@ -35,9 +40,11 @@ VSCode Extensions:
 - v-on:submit.prevent - do the work of event.preventDefault()
 - v-on:keyup:enter - to submit the form on Enter key on an input
 
+
 7. Bonus directives
 - v-once - it will render the element(which is using this directive) only once, at re-render it won't change
 - v-pre - it won't compile the element(which is using this directive), it will render it as it is as a HTML string
+
 
 8. Computed property
 - It computes a peroperty based on the existing data as the computed property.
@@ -46,6 +53,7 @@ VSCode Extensions:
 - Use Computed Properties when:
     - You need to compose new data from existing data
     - You need to reduce the length of the variable by getting someDeeplyNestedProperty of an object
+
 
 9. Watchers
 - It watches the changes in a property given as key
@@ -106,3 +114,31 @@ VSCode Extensions:
         ...
         inject: ['data']
     }
+
+
+12. Custom Component Event
+- It helps the child component to communicate with the parent component with the help of events emitted from child component
+- In child component, to emit an event to parent component, you have to write the event in 'emits' property and use $emit('[event_name]') on button click
+    <template>
+        ...
+        <button @click="$emit('an_event')">Emit Event</button>
+        ...
+    </template>
+    export default {
+        name: 'ChildComponent', ...
+        emits: ['an_event']
+    }
+- You can also pass data along with the event name i.e. you can write $emit('an_event', data) in template
+- You can do the validation of these events in the same way as props
+    export default {
+        name: 'ChildComponent', ...
+        emits: {
+            an_event(data) {
+                if validation is successful
+                    return true
+                else
+                    return false 
+            }
+        }
+    }
+- Sometimes you need to create Custom Form input Component, that time need to manage the value of v-model attribute

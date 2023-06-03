@@ -47,6 +47,7 @@ export default {
                 'Watchers',
                 'Component and Props',
                 'Provide and Inject',
+                'Custom Component Event',
             ],
             currentMenuIndex: 0,
         }

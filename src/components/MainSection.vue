@@ -9,6 +9,7 @@
         <Watchers v-if="currentMenuIndex === 6" />
         <ComponentAndProps v-if="currentMenuIndex === 7" />
         <ProvideAndInject v-if="currentMenuIndex === 8" />
+        <CustomComponentEvent v-if="currentMenuIndex === 9" />
     </div>
 </template>
 
@@ -23,6 +24,7 @@ import ComputedProperties from './Topics/6_ComputedProperties.vue'
 import Watchers from './Topics/7_Watchers.vue';
 import ComponentAndProps from './Topics/8_ComponentAndProps.vue';
 import ProvideAndInject from './Topics/9_ProvideAndInject.vue';
+import CustomComponentEvent from './Topics/10_CustomComponentEvent.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -35,6 +37,7 @@ export default {
         Watchers,
         ComponentAndProps,
         ProvideAndInject,
+        CustomComponentEvent,
     }, 
     props: {
         menuItems: Array,

@@ -11,6 +11,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Article from './NestedComponents/Article.vue';
 export default {
     name: 'ComponentAndProps',

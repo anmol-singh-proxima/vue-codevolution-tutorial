@@ -9,15 +9,16 @@
 </template>
 
 <script>
-    export default {
-        name: 'Article',
-        props: {
-            article: {
-                type: Object,
-                required: true,
-            }
+/* eslint-disable */
+export default {
+    name: 'Article',
+    props: {
+        article: {
+            type: Object,
+            required: true,
         }
     }
+}
 </script>
 
 <style scoped>

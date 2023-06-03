@@ -20,10 +20,11 @@
 </template>
 
 <script>
-    export default {
-        name: 'ProvideAndInject',
-        inject: ['data']
-    }
+/* eslint-disable */
+export default {
+    name: 'ProvideAndInject',
+    inject: ['data']
+}
 </script>
 
 <style scoped>
