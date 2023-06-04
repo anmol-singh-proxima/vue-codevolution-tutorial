@@ -142,3 +142,12 @@ VSCode Extensions:
         }
     }
 - Sometimes you need to create Custom Form input Component, that time need to manage the value of v-model attribute
+
+
+13. Slots
+- When the communication is happened between components, the data(props) is handled by the ParentComponent and the html content(template) is handled by the ChildComponent, thus creates a strong bind between them, and ParentComponent has no control over the template of ChildComponent
+- Slots are a way of passing the data to ChildComponent, both the props and the html content thus making the ParentComponent in control of the ChildComponent
+- Slot Props
+    - To pass data from ChildComponent to ParentComponent, slot-props is used
+    - It simply pass the data as props in <slot :prop="[value]"> in ChildComponent which is accessed in <template v-slot:default="slotProps"> in ParentComponent
+    - This way, ParentComponent can define how to data will get displayed

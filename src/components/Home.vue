@@ -48,6 +48,7 @@ export default {
                 'Component and Props',
                 'Provide and Inject',
                 'Custom Component Event',
+                'Slots',
             ],
             currentMenuIndex: 0,
         }
