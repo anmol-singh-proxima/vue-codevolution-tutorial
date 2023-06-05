@@ -14,6 +14,7 @@
         <DynamicComponent v-if="currentMenuIndex === 11" />
         <TeleportComponent v-if="currentMenuIndex === 12" />
         <HttpRequest v-if="currentMenuIndex === 13" />
+        <LifecycleHooks v-if="currentMenuIndex === 14" />
     </div>
 </template>
 
@@ -33,6 +34,7 @@ import Slots from './Topics/11_Slots.vue'
 import DynamicComponent from './Topics/12_DynamicComponent.vue'
 import TeleportComponent from './Topics/13_TeleportComponent.vue'
 import HttpRequest from './Topics/14_HttpRequest.vue'
+import LifecycleHooks from './Topics/15_LifecycleHooks.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -50,6 +52,7 @@ export default {
         DynamicComponent,
         TeleportComponent,
         HttpRequest,
+        LifecycleHooks,
     }, 
     props: {
         menuItems: Array,

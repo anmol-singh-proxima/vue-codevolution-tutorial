@@ -181,3 +181,16 @@ VSCode Extensions:
     <teleport to="#portal-root">
         <Modal></Modal>
     </teleport>
+
+
+17. Lifecycle Hooks
+- There are 4 phases in the Vue Component, and there are 13 lifecyle hooks related to the Vue Components
+- The Phases are:
+    - Creation - beforeCreate(), created()
+    - Mounting - beforeMount(). mounted()
+    - Updation - beforeUpdate(). updated()
+    - Unmounting - beforeUnmount(), unmounted()
+- The 5 other lifecycle hooks are:
+    - activated(), deactivated() - These are triggered when the components are being activated and/or deactivated in keep-alive functionality
+    - errorCaptured() - This is triggered when an error is captured in any descendant component
+    - renderTracked(), renderTriggered() - These are triggered when a component is rendered on UI

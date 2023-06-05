@@ -52,6 +52,7 @@ export default {
                 'Dynamic Component',
                 'Teleport Component',
                 'Http Request',
+                'Lifecycle Hooks',
             ],
             currentMenuIndex: 0,
         }
