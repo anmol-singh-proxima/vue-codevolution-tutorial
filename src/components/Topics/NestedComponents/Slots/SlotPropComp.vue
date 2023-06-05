@@ -29,6 +29,6 @@ export default {
     padding: 10px;
     margin: 20px 20px 20px 0;
     width: fit-content;
-    width: 295px;
+    width: 300px;
 }
 </style>

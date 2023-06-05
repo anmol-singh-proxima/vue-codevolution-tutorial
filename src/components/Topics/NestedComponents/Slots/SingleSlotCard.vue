@@ -20,7 +20,7 @@ export default {
     padding: 10px;
     margin: 20px 20px 20px 0;
     width: fit-content;
-    width: 295px;
+    width: 300px;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(130, 140, 150, 0.5);
