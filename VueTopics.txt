@@ -165,7 +165,7 @@ VSCode Extensions:
     <component :is="[ActiveComponentName]" />
 - Based on a certain condition we can change the 'ActiveComponentName' by using some logic
 - keep-alive
-    - We can keep the dynamic component alive by adding an html element
+    - You can keep the dynamic component alive by adding an html element
         <keep-alive>
             <component :is="[ActiveComponentName]" />
         </keep-alive>
@@ -173,3 +173,11 @@ VSCode Extensions:
         - you want to maintain the data in the components
         - you does not want to re-render the components
  
+
+ 16. Teleport Component
+ - These component are on the different node on the html other than the default '#app' node
+ - You need teleport component when you want to render something other than the normal flow of component like a Modal, Tool-tip, Alert, etc.
+ - To acheive this, you need to add the <teleport> html element around the component which you want to render other than the normal flow of components and provide the HTML DOM element in 'to' attribute
+    <teleport to="#portal-root">
+        <Modal></Modal>
+    </teleport>

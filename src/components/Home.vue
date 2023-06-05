@@ -49,7 +49,8 @@ export default {
                 'Provide and Inject',
                 'Custom Component Event',
                 'Slots',
-                'DynamicComponent',
+                'Dynamic Component',
+                'Teleport Component',
             ],
             currentMenuIndex: 0,
         }

@@ -12,6 +12,7 @@
         <CustomComponentEvent v-if="currentMenuIndex === 9" />
         <Slots v-if="currentMenuIndex === 10" />
         <DynamicComponent v-if="currentMenuIndex === 11" />
+        <TeleportComponent v-if="currentMenuIndex === 12" />
     </div>
 </template>
 
@@ -29,6 +30,7 @@ import ProvideAndInject from './Topics/9_ProvideAndInject.vue';
 import CustomComponentEvent from './Topics/10_CustomComponentEvent.vue'
 import Slots from './Topics/11_Slots.vue'
 import DynamicComponent from './Topics/12_DynamicComponent.vue'
+import TeleportComponent from './Topics/13_TeleportComponent.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -44,6 +46,7 @@ export default {
         CustomComponentEvent,
         Slots,
         DynamicComponent,
+        TeleportComponent,
     }, 
     props: {
         menuItems: Array,
