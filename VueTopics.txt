@@ -194,3 +194,8 @@ VSCode Extensions:
     - activated(), deactivated() - These are triggered when the components are being activated and/or deactivated in keep-alive functionality
     - errorCaptured() - This is triggered when an error is captured in any descendant component
     - renderTracked(), renderTriggered() - These are triggered when a component is rendered on UI
+
+
+18. Template Ref
+- It is a method of accessing the DOM elements directly in Vue
+- It is done by using 'ref' attribute on any HTML element and provide a value to it, then access the value of 'ref' attribute in 'this.$refs' object of Vue Component and perform the neccessary actions on that HTML element
