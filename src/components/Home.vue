@@ -49,6 +49,7 @@ export default {
                 'Provide and Inject',
                 'Custom Component Event',
                 'Slots',
+                'DynamicComponent',
             ],
             currentMenuIndex: 0,
         }

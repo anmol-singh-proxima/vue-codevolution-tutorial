@@ -11,6 +11,7 @@
         <ProvideAndInject v-if="currentMenuIndex === 8" />
         <CustomComponentEvent v-if="currentMenuIndex === 9" />
         <Slots v-if="currentMenuIndex === 10" />
+        <DynamicComponent v-if="currentMenuIndex === 11" />
     </div>
 </template>
 
@@ -27,6 +28,7 @@ import ComponentAndProps from './Topics/8_ComponentAndProps.vue';
 import ProvideAndInject from './Topics/9_ProvideAndInject.vue';
 import CustomComponentEvent from './Topics/10_CustomComponentEvent.vue'
 import Slots from './Topics/11_Slots.vue'
+import DynamicComponent from './Topics/12_DynamicComponent.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -41,6 +43,7 @@ export default {
         ProvideAndInject,
         CustomComponentEvent,
         Slots,
+        DynamicComponent,
     }, 
     props: {
         menuItems: Array,
