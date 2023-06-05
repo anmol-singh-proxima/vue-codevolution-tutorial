@@ -15,6 +15,7 @@
         <TeleportComponent v-if="currentMenuIndex === 12" />
         <HttpRequest v-if="currentMenuIndex === 13" />
         <LifecycleHooks v-if="currentMenuIndex === 14" />
+        <TemplateRef v-if="currentMenuIndex === 15" />
     </div>
 </template>
 
@@ -35,6 +36,7 @@ import DynamicComponent from './Topics/12_DynamicComponent.vue'
 import TeleportComponent from './Topics/13_TeleportComponent.vue'
 import HttpRequest from './Topics/14_HttpRequest.vue'
 import LifecycleHooks from './Topics/15_LifecycleHooks.vue'
+import TemplateRef from './Topics/16_TemplateRef.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -53,6 +55,7 @@ export default {
         TeleportComponent,
         HttpRequest,
         LifecycleHooks,
+        TemplateRef,
     }, 
     props: {
         menuItems: Array,

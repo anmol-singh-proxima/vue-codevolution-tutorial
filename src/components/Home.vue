@@ -53,6 +53,7 @@ export default {
                 'Teleport Component',
                 'Http Request',
                 'Lifecycle Hooks',
+                'Template Ref',
             ],
             currentMenuIndex: 0,
         }
