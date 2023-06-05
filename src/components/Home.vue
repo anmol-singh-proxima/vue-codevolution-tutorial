@@ -51,6 +51,7 @@ export default {
                 'Slots',
                 'Dynamic Component',
                 'Teleport Component',
+                'Http Request',
             ],
             currentMenuIndex: 0,
         }

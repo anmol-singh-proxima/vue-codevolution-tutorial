@@ -13,6 +13,7 @@
         <Slots v-if="currentMenuIndex === 10" />
         <DynamicComponent v-if="currentMenuIndex === 11" />
         <TeleportComponent v-if="currentMenuIndex === 12" />
+        <HttpRequest v-if="currentMenuIndex === 13" />
     </div>
 </template>
 
@@ -31,6 +32,7 @@ import CustomComponentEvent from './Topics/10_CustomComponentEvent.vue'
 import Slots from './Topics/11_Slots.vue'
 import DynamicComponent from './Topics/12_DynamicComponent.vue'
 import TeleportComponent from './Topics/13_TeleportComponent.vue'
+import HttpRequest from './Topics/14_HttpRequest.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -47,6 +49,7 @@ export default {
         Slots,
         DynamicComponent,
         TeleportComponent,
+        HttpRequest,
     }, 
     props: {
         menuItems: Array,
