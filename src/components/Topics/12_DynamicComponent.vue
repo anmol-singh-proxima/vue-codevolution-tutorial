@@ -30,6 +30,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import Html from './NestedComponents/DynamicComponent/Html.vue'
 import Css from './NestedComponents/DynamicComponent/Css.vue';
 import Javascript from './NestedComponents/DynamicComponent/Javascript.vue';
