@@ -217,5 +217,9 @@ VSCode Extensions:
 
 
 21. Composition API changes
-- ref() and reactive() instead of data()
-- toRefs()
+- setup(){} is the entry point of the Composition API - everthing is written inside setup(){}
+- ref() and reactive() instead of data(){} for data handling
+- toRefs() for easier binding of data in template
+- methods is replaced by function() in setup(){}
+- v-model acts as same as in Options API
+- computed{} option is replaced using compute() funciton which accepts a function to perform the operation and returns a value which can be saved in a variable

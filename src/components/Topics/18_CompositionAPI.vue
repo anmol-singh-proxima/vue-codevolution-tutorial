@@ -14,6 +14,10 @@
                 <h3>3. Replace Methods</h3>
                 <ReplaceMethods />
             </div><hr/>
+            <div>
+                <h3>4. Replace Computed</h3>
+                <ReplaceComputed />
+            </div><hr/>
         </div>
     </div>
 </template>
@@ -23,12 +27,14 @@
 import RefsAndReactive from './NestedComponents/CompositionAPI/1_RefsAndReactive.vue'
 import ToRefs from './NestedComponents/CompositionAPI/2_ToRefs.vue'
 import ReplaceMethods from './NestedComponents/CompositionAPI/3_ReplaceMethods.vue';
+import ReplaceComputed from './NestedComponents/CompositionAPI/4_ReplaceComputed.vue';
 export default {
     name: 'CompositionAPI',
     components: {
         RefsAndReactive,
         ToRefs,
-        ReplaceMethods
+        ReplaceMethods,
+        ReplaceComputed
     }
 }
 </script>
