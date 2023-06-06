@@ -16,6 +16,7 @@
         <HttpRequest v-if="currentMenuIndex === 13" />
         <LifecycleHooks v-if="currentMenuIndex === 14" />
         <TemplateRef v-if="currentMenuIndex === 15" />
+        <Mixins v-if="currentMenuIndex === 16" />
     </div>
 </template>
 
@@ -37,6 +38,7 @@ import TeleportComponent from './Topics/13_TeleportComponent.vue'
 import HttpRequest from './Topics/14_HttpRequest.vue'
 import LifecycleHooks from './Topics/15_LifecycleHooks.vue'
 import TemplateRef from './Topics/16_TemplateRef.vue'
+import Mixins from './Topics/17_Mixins.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -56,6 +58,7 @@ export default {
         HttpRequest,
         LifecycleHooks,
         TemplateRef,
+        Mixins,
     }, 
     props: {
         menuItems: Array,

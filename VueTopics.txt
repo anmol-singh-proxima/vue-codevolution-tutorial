@@ -199,3 +199,9 @@ VSCode Extensions:
 18. Template Ref
 - It is a method of accessing the DOM elements directly in Vue
 - It is done by using 'ref' attribute on any HTML element and provide a value to it, then access the value of 'ref' attribute in 'this.$refs' object of Vue Component and perform the neccessary actions on that HTML element
+
+
+19. Mixins
+- Whenever more than one components use the same functionality than we can write these functionality in a different javascript file, and import it in them and add them in component's 'mixins' property to use them in component
+- These functionality can be data(), methods{}, hooks(), computed values, etc.
+- If the component has the same property as it is in 'mixins' then the component property will get preferrence.

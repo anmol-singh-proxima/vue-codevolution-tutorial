@@ -54,6 +54,7 @@ export default {
                 'Http Request',
                 'Lifecycle Hooks',
                 'Template Ref',
+                'Mixins',
             ],
             currentMenuIndex: 0,
         }

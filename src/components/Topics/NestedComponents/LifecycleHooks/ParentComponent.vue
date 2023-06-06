@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import { onBeforeMount, onMounted } from 'vue'
 /* eslint-disable */
 import ChildComponent from './ChildComponent.vue'
 export default {
