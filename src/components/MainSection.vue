@@ -17,6 +17,7 @@
         <LifecycleHooks v-if="currentMenuIndex === 14" />
         <TemplateRef v-if="currentMenuIndex === 15" />
         <Mixins v-if="currentMenuIndex === 16" />
+        <CompositionAPI v-if="currentMenuIndex === 17" />
     </div>
 </template>
 
@@ -39,6 +40,7 @@ import HttpRequest from './Topics/14_HttpRequest.vue'
 import LifecycleHooks from './Topics/15_LifecycleHooks.vue'
 import TemplateRef from './Topics/16_TemplateRef.vue'
 import Mixins from './Topics/17_Mixins.vue'
+import CompositionAPI from './Topics/18_CompositionAPI.vue'
 export default {
     name: 'MainSection',  
     components: {
@@ -59,6 +61,7 @@ export default {
         LifecycleHooks,
         TemplateRef,
         Mixins,
+        CompositionAPI,
     }, 
     props: {
         menuItems: Array,

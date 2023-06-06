@@ -55,6 +55,7 @@ export default {
                 'Lifecycle Hooks',
                 'Template Ref',
                 'Mixins',
+                'Composition API',
             ],
             currentMenuIndex: 0,
         }

@@ -205,3 +205,17 @@ VSCode Extensions:
 - Whenever more than one components use the same functionality than we can write these functionality in a different javascript file, and import it in them and add them in component's 'mixins' property to use them in component
 - These functionality can be data(), methods{}, hooks(), computed values, etc.
 - If the component has the same property as it is in 'mixins' then the component property will get preferrence.
+
+
+20. Composition API
+- Composition API is just another way to write a Vue Component, especially script block.
+- The earlier method was called as Options API where there the component was built-up using many different Options such as data, methods, props, mixins, lifecycle-hooks.
+- In Options API, the features are divided in different options whereas in Composition API, the features are encapsulated so that they can be used in different components through out the application.
+- Why Composition API?
+    - Vue projects became hard to manage as they grew in size and complexity
+    - Re-using logic across components became difficult
+
+
+21. Composition API changes
+- ref() and reactive() instead of data()
+- toRefs()
