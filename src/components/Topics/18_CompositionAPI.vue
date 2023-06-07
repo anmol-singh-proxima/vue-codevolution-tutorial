@@ -18,6 +18,14 @@
                 <h3>4. Replace Computed</h3>
                 <ReplaceComputed />
             </div><hr/>
+            <div>
+                <h3>5. Replace Watchers</h3>
+                <ReplaceWatchers />
+            </div><hr/>
+            <div>
+                <h3>5. Provide and Inject</h3>
+                <ProvideInject />
+            </div><hr/>
         </div>
     </div>
 </template>
@@ -28,13 +36,17 @@ import RefsAndReactive from './NestedComponents/CompositionAPI/1_RefsAndReactive
 import ToRefs from './NestedComponents/CompositionAPI/2_ToRefs.vue'
 import ReplaceMethods from './NestedComponents/CompositionAPI/3_ReplaceMethods.vue';
 import ReplaceComputed from './NestedComponents/CompositionAPI/4_ReplaceComputed.vue';
+import ReplaceWatchers from './NestedComponents/CompositionAPI/5_ReplaceWatchers.vue';
+import ProvideInject from './NestedComponents/CompositionAPI/6_ProvideInject.vue';
 export default {
     name: 'CompositionAPI',
     components: {
         RefsAndReactive,
         ToRefs,
         ReplaceMethods,
-        ReplaceComputed
+        ReplaceComputed,
+        ReplaceWatchers,
+        ProvideInject,
     }
 }
 </script>

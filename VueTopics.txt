@@ -222,4 +222,29 @@ VSCode Extensions:
 - toRefs() for easier binding of data in template
 - methods is replaced by function() in setup(){}
 - v-model acts as same as in Options API
-- computed{} option is replaced using compute() funciton which accepts a function to perform the operation and returns a value which can be saved in a variable
+- computed{} option is replaced with compute() funciton which accepts a function to perform the operation and returns a value which can be saved in a variable
+
+
+22. Watchers in Composition API
+- watch{} option is replaced with watch() function
+- It takes 2 arguments
+    - 1st - variables to watch
+    - 2nd - function to execute with 2 arguments - newValue and oldValue
+- If the function to execute for watching variables is same then it can take an array of those variables with the same function with an array of newValues and oldValues
+- To excute the function at loading, it takes 3rd argument as object with property 'immediate' as true
+- It works different for data created with both ref and reactive
+- Watchers can work on ref values, reactive values and array of values
+- To watch any other data property, we need a getter function as the first argument
+    () => { return '[value-to-watch]' }
+- For Deep watch
+    - import _ from lodash
+    - Add the cloneDeep() in watcher getter function (in place of variable)
+        () => _.cloneDeep('[property-to-watch]')
+
+
+23. Lifecycle Hooks in Composition API
+- The names of the hooks has been changed
+    - beforeCreate() & created() are replaced by setup()
+    - mounted(), updated() & unmounted() are replaced by onMounted(), onUpdated() & onUnmounted() respectively
+- The hooks are to be imported in the export_default{} in Composition API whereas the hooks were already there export_default{} in Options API
+- The hooks are executed by passing a function as an argument to them

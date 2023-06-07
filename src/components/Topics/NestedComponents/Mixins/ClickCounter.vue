@@ -18,8 +18,9 @@ export default {
 <style scoped>
 .click-area {
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.3;
+    text-align: center;
     width: 400px;
     color: #fff;
     background-color: chocolate;
