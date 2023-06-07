@@ -250,11 +250,17 @@ VSCode Extensions:
 - The hooks are executed by passing a function as an argument to them
 
 
-24. Template Ref
+24. Template Ref in Composition API
 - The <template> is same as the Options API
 - In the script block, the reference-value should be created using ref() and return it from the setup()
 
 
-25. Props
+25. Props in Composition API
 - In Composition API, the props is passed from the ParentComponent in the same fashion as in Options API
-- But in the ChildComponent, its can be accessed as the first argument of setup(){} method 
+- But in the ChildComponent, its can be accessed as the first argument of setup(){} method
+
+
+26. Custom Events in Composition API
+- Custom events work mostly same as in Options API
+- Custom event is called through $emit() function
+- emit() is one of the properties of the 'context' object which is the second argument of the setup(){} method

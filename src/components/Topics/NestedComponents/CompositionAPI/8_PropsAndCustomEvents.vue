@@ -7,9 +7,9 @@
 
 <script>
 /* eslint-disable */
-import ParentComponent from './Props/ParentComponent.vue';
+import ParentComponent from './PropsAndCustomEvents/ParentComponent.vue';
 export default {
-    name: 'Props',
+    name: 'PropsAndCustomEvents',
     components: {
         ParentComponent,
     }

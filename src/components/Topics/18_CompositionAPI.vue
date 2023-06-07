@@ -31,8 +31,8 @@
                 <TemplateRef />
             </div><hr/>
             <div>
-                <h3>7. Props</h3>
-                <Props />
+                <h3>7. Props and Custom Events</h3>
+                <PropsAndCustomEvents />
             </div><hr/>
         </div>
     </div>
@@ -47,7 +47,7 @@ import ReplaceComputed from './NestedComponents/CompositionAPI/4_ReplaceComputed
 import ReplaceWatchers from './NestedComponents/CompositionAPI/5_ReplaceWatchers.vue';
 import ProvideInject from './NestedComponents/CompositionAPI/6_ProvideInject.vue';
 import TemplateRef from './NestedComponents/CompositionAPI/7_TemplateRef.vue';
-import Props from './NestedComponents/CompositionAPI/8_Props.vue';
+import PropsAndCustomEvents from './NestedComponents/CompositionAPI/8_PropsAndCustomEvents.vue';
 export default {
     name: 'CompositionAPI',
     components: {
@@ -58,7 +58,7 @@ export default {
         ReplaceWatchers,
         ProvideInject,
         TemplateRef,
-        Props,
+        PropsAndCustomEvents,
     }
 }
 </script>

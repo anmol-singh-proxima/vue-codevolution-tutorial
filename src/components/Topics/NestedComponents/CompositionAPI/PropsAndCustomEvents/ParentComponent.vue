@@ -5,9 +5,9 @@
             <p>The data from these inputs will be passed as props to ChildComponent</p>
             <input type="text" placeholder="First Name" v-model="firstname" />
             <input type="text" placeholder="Last Name" v-model="lastname" />
-            <input type="text" placeholder="Hero Name" v-model="heroname" />
+            <p v-if="heroname"><b>Heroname sent from ChildComponent: {{ heroname }}</b></p>
         </div>
-        <ChildComponent :firstname="firstname" :lastname="lastname" :heroname="heroname" />
+        <ChildComponent :firstname="firstname" :lastname="lastname" @callHero="getHeroname"/>
     </div>
 </template>
 
@@ -21,13 +21,17 @@ export default {
         ChildComponent,
     },
     setup() {
-        const firstname = ref('Anmol')
-        const lastname = ref('Singh')
-        const heroname = ref('Shera')
+        const firstname = ref('Natasha')
+        const lastname = ref('Romanoff')
+        const heroname = ref('')
+        function getHeroname(name) {
+            heroname.value = name
+        }
         return {
             firstname,
             lastname,
-            heroname
+            heroname,
+            getHeroname,
         }
     }
 }
@@ -41,5 +45,13 @@ export default {
 .parent-component h4, .parent-component p {
     padding: 6px;
     margin: 0;
+}
+input {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
 }
 </style>
