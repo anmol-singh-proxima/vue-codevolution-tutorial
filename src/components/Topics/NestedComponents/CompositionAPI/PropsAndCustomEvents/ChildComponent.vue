@@ -35,12 +35,8 @@ export default {
 <style scoped>
 .child-component {
     border: 1px solid #999;
-    padding: 10px;
-    margin-top: 10px;
-}
-.child-component h4, .child-component p {
-    padding: 6px;
-    margin: 0;
+    padding: 20px;
+    margin-top: 20px;
 }
 input, button {
     display: block;

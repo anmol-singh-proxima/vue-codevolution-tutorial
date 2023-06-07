@@ -264,3 +264,12 @@ VSCode Extensions:
 - Custom events work mostly same as in Options API
 - Custom event is called through $emit() function
 - emit() is one of the properties of the 'context' object which is the second argument of the setup(){} method
+
+
+27. Replacing Mixins in Composition API
+- Mixins had 2 problems:
+    - The Components were not aware of the names used in mixins which could lead to naming conflict
+    - There was no flexibility for using the functionality given in the mixins in any other way
+- In Composition API, the reusable functionalities are stored in a folder called either 'compositions' or 'hooks'
+- These functionalities are simple javascript functions which are imported in the components and the values are destructured thus solving the 1st problem of mixins
+- These functionalities takes arguments which can be sent through the components thus making the functionalities flexible to individual component needs

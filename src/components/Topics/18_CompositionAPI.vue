@@ -34,6 +34,10 @@
                 <h3>7. Props and Custom Events</h3>
                 <PropsAndCustomEvents />
             </div><hr/>
+            <div>
+                <h3>8. Replacing Mixins</h3>
+                <ReplacingMixins />
+            </div><hr/>
         </div>
     </div>
 </template>
@@ -48,6 +52,7 @@ import ReplaceWatchers from './NestedComponents/CompositionAPI/5_ReplaceWatchers
 import ProvideInject from './NestedComponents/CompositionAPI/6_ProvideInject.vue';
 import TemplateRef from './NestedComponents/CompositionAPI/7_TemplateRef.vue';
 import PropsAndCustomEvents from './NestedComponents/CompositionAPI/8_PropsAndCustomEvents.vue';
+import ReplacingMixins from './NestedComponents/CompositionAPI/9_ReplacingMixins.vue';
 export default {
     name: 'CompositionAPI',
     components: {
@@ -59,6 +64,7 @@ export default {
         ProvideInject,
         TemplateRef,
         PropsAndCustomEvents,
+        ReplacingMixins,
     }
 }
 </script>
