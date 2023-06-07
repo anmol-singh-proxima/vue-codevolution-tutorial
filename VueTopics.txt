@@ -246,5 +246,10 @@ VSCode Extensions:
 - The names of the hooks has been changed
     - beforeCreate() & created() are replaced by setup()
     - mounted(), updated() & unmounted() are replaced by onMounted(), onUpdated() & onUnmounted() respectively
-- The hooks are to be imported in the export_default{} in Composition API whereas the hooks were already there export_default{} in Options API
+- The hooks are to be imported in the export_default{} in Composition API whereas the hooks were already existing in the export_default{} in Options API
 - The hooks are executed by passing a function as an argument to them
+
+
+24. Template Ref
+- The <template> is same as the Options API
+- In the script block, the reference-value should be created using ref() and return it from the setup()

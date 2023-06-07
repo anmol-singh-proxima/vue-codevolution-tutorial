@@ -26,6 +26,10 @@
                 <h3>5. Provide and Inject</h3>
                 <ProvideInject />
             </div><hr/>
+            <div>
+                <h3>6. Template Ref</h3>
+                <TemplateRef />
+            </div><hr/>
         </div>
     </div>
 </template>
@@ -38,6 +42,7 @@ import ReplaceMethods from './NestedComponents/CompositionAPI/3_ReplaceMethods.v
 import ReplaceComputed from './NestedComponents/CompositionAPI/4_ReplaceComputed.vue';
 import ReplaceWatchers from './NestedComponents/CompositionAPI/5_ReplaceWatchers.vue';
 import ProvideInject from './NestedComponents/CompositionAPI/6_ProvideInject.vue';
+import TemplateRef from './NestedComponents/CompositionAPI/7_TemplateRef.vue';
 export default {
     name: 'CompositionAPI',
     components: {
@@ -47,6 +52,7 @@ export default {
         ReplaceComputed,
         ReplaceWatchers,
         ProvideInject,
+        TemplateRef,
     }
 }
 </script>
