@@ -253,3 +253,8 @@ VSCode Extensions:
 24. Template Ref
 - The <template> is same as the Options API
 - In the script block, the reference-value should be created using ref() and return it from the setup()
+
+
+25. Props
+- In Composition API, the props is passed from the ParentComponent in the same fashion as in Options API
+- But in the ChildComponent, its can be accessed as the first argument of setup(){} method 
